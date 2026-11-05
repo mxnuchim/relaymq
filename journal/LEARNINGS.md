@@ -60,3 +60,8 @@ Tags: [concept] [go] [design] [bug] [tooling] [perf] [product]
 **Context:** Name reservation after the switch to Go.
 **Learning:** Go modules are identified by their repository path (e.g. `github.com/relaymq/relaymq`), and pkg.go.dev indexes them automatically. There is no central name to claim. The crates.io reservation is no longer needed for this project.
 **Rule going forward:** Secure the GitHub org `relaymq` (that *is* the Go package name) and the npm name `relaymq` for the TypeScript SDK. Skip crates.io.
+
+## 2026-11-05 12:47 WAT — [go] Module path is github.com/mxnuchim/relaymq (supersedes the org-name note above)
+**Context:** Manuchim decided to keep the repo on his personal GitHub account.
+**Learning:** A Go module's path is its import path forever. Changing it later means rewriting every import and breaking anyone who depends on it. Personal-account modules are common (e.g. spf13/cobra, mattn/go-sqlite3).
+**Rule going forward:** Use `go mod init github.com/mxnuchim/relaymq`. Every import uses that prefix. Don't move the repo without planning the module path change.

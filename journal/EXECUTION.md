@@ -62,3 +62,13 @@ Entry format:
 **Result:** The repo holds all the project context. Still no Go code.
 **Files:** .gitignore, journal/EXECUTION.md
 **Next:** M0 + M1 using the Claude Code prompt (Go skeleton, then the queue state machine).
+
+## 2026-11-05 12:47 WAT — Repo home and attribution settled
+**Goal:** Lock where the code lives and how commits are attributed.
+**Steps:**
+1. The repo stays at github.com/mxnuchim/relaymq (personal account). The npm org `@relaymq` exists; the plain `relaymq` package isn't published yet.
+2. Turned off Claude attribution in commits and PRs (`attribution` set to empty in .claude/settings.json) and added a matching rule to CLAUDE.md.
+3. Manuchim to amend the first commit locally to drop the earlier co-author trailer, then force-push.
+**Result:** Module path decided: `github.com/mxnuchim/relaymq`.
+**Files:** CLAUDE.md, .claude/settings.json, journal/EXECUTION.md, journal/LEARNINGS.md
+**Next:** Install Go, then M0 + M1 via Claude Code.

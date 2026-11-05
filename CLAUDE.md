@@ -34,4 +34,5 @@ Rules:
 - A Stop hook (`.claude/hooks/journal-guard.sh`) blocks finishing when ≥3 project files changed since the last EXECUTION entry. Satisfy it with a real entry; never just touch the file.
 
 ## Git
+- Repo: https://github.com/mxnuchim/relaymq. Go module path: `github.com/mxnuchim/relaymq` (decided 2026-11-05; stays on the personal account, not the `relaymq` org).
 - No AI attribution in commits or PRs: no `Co-Authored-By: Claude` trailers, no session links, no "Generated with" lines. Commits are authored by Manuchim.
